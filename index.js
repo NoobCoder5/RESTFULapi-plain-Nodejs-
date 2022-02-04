@@ -63,7 +63,6 @@ const unifiedServer = function (req, res) {
         queryStringObject: queryStringObject,
         method: method,
         headers: headers,
-        
       };
     }
 
@@ -88,7 +87,7 @@ const unifiedServer = function (req, res) {
 };
 
 const router = {
-  sample: handlers.sample,
   users: handlers.users,
-  tokens:handlers.tokens,
+  tokens: handlers.tokens,
+  checks: handlers.checks,
 };
